@@ -32,7 +32,7 @@ export default function JokesIndexRoute() {
       <Form method="post" onChange={handleChange}>
         <label for="category">Choose a category:</label>
         <select name="category" id="category">
-          <option></option>
+          <option disabled selected>Pick a Category</option>
           {filteredCategories.map((c) => {
             return <option value={c}>{c}</option>;
           })}
